@@ -1,0 +1,51 @@
+[
+  {
+    "scenario_id": "GT-001",
+    "description": "Beginner learner should receive foundational content",
+    "learner_status": "ACTIVE",
+    "expected_behavior": "RECOMMEND_BEGINNER_CONTENT"
+  },
+  {
+    "scenario_id": "GT-002",
+    "description": "Learner who mastered Python fundamentals should progress to advanced content",
+    "learner_status": "ACTIVE",
+    "expected_behavior": "RECOMMEND_NEXT_LEVEL_CONTENT"
+  },
+  {
+    "scenario_id": "GT-003",
+    "description": "Learner who has not mastered prerequisites should not receive dependent content",
+    "learner_status": "ACTIVE",
+    "expected_behavior": "ENFORCE_PREREQUISITES"
+  },
+  {
+    "scenario_id": "GT-004",
+    "description": "Inactive learner should not receive recommendations",
+    "learner_status": "INACTIVE",
+    "expected_behavior": "NO_RECOMMENDATIONS"
+  },
+  {
+    "scenario_id": "GT-005",
+    "description": "Advanced learner should receive suitable advanced content",
+    "learner_status": "ACTIVE",
+    "expected_behavior": "RECOMMEND_ADVANCED_CONTENT"
+  },
+  {
+    "scenario_id": "GT-006",
+    "description": "Learner with low assessment scores should receive remedial content",
+    "learner_status": "ACTIVE",
+    "expected_behavior": "RECOMMEND_FOUNDATIONAL_CONTENT"
+  },
+  {
+    "scenario_id": "GT-007",
+    "description": "Learner with high assessment scores should receive next-level content",
+    "learner_status": "ACTIVE",
+    "expected_behavior": "RECOMMEND_NEXT_LEVEL_CONTENT"
+  },
+  {
+    "scenario_id": "GT-008",
+    "description": "Archived content should never be recommended",
+    "learner_status": "ACTIVE",
+    "expected_behavior": "EXCLUDE_ARCHIVED_CONTENT"
+  }
+]
+

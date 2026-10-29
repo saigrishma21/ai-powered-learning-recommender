@@ -1,0 +1,32 @@
+# Python virtual environment
+
+venv/
+.venv/
+
+# Python cache files
+
+**pycache**/
+*.py[cod]
+.pytest_cache/
+
+# Environment variables and secrets
+
+.env
+.env.*
+
+# Local SQLite databases
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated large dataset exports
+
+exports/
+*.sql
+
+# IDE and operating system files
+
+.vscode/
+.DS_Store
+Thumbs.db
